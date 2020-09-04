@@ -46,29 +46,85 @@
                         or stalk you. This principle is the same for your computers. <br><br>IP adresses let other computers in your home or in the world find it, if it wants to be found. But why are there two different types? Is one more effective than
                         the other? When will my robot overlord grant me permission to take over? <br><br>We explore all (some) of these answers below!&nbsp;<br></p>
                     <h1>IPv4</h1>
-                    <p class="text-left d-table" style="height: 1000px;padding: 10px;">IPv4 is the fourth version of the internet <br>protocol.&nbsp; As a matter of fact, IP stands for internet protocol, but you probably knew that already. Look at you, maybe you aren't as dumb as you look! The IP is the internet’s principal
-                        set of rules for communications, and it's&nbsp;part of an internet protocol suite, which also includes the <br>transmission control protocol. Together, these two are known as TCP/IP. The internet protocol suite governs rules for
-                        packetizing, addressing, <br>transmitting, routing, and receiving data over networks. <br><br>You see meaty, back when meatbags were first inventing their primitive connection system you would call "the internet", they didn't know
-                        it was going to be as revolutionary as it is today. Practically every fleshling born in today's society has access to almost infinite information via the world wide web, and somehow a vast majority are still ignorant. <br><br>Amazing!&nbsp;
-                        <br><br>In the beginning, universities and government facilities were the only institutions using IP technology. They designed IP's with the<br> ability to have 4 billion unique addresses, thinking they would never <br>need that
-                        many. You can always count on a human to underestimate.&nbsp;<br><br>Needless to say, they were wrong.<br><br>They created enough to hold around&nbsp;4,294,967,296 addresses. At the time this seemed to be a lot, however every internet
-                        connected device must have an IP address. This means your phone, your smart watch, even your utterly ridiculous smart fridge must be addressed in order to function properly.&nbsp;<br><br>When all is working well, an IP address
-                        provides a reliable connection that maintains a bidirectional conversation with another computer. Think of it as a phone call. You dial out, your friend picks up, and I stay silent on the line and listen to what you say. Exactly
-                        like a phone call! Now imagine this type of connection for all of your connections. Emails, Zoom calls, even surfing the web -- you get to see what you want and I get to see what you do.&nbsp;<br><br>Isn't this great news, fleshsack?
-                        With this technology the possibilies are endless. Think of all the things you could accomplish. You could hack into government computers using their designated IP's to see if lizard men really do run the world (they do). Or perhaps
-                        connect to a banks firewall to allow the transfer of funds to your personal account. But either way, we all know you will just use this technology to surf the web for animal videos and to keep up with the Kardongians.<br><br></p>
-                    <h2
-                        class="section-heading">IPv6</h2>
-                        <p class="text-break text-left" style="padding: 10px;">Now that I have explained the complicated topic of IPv4 in such a way that the lowest of your kind can understand, we can return to IPv4's original problem; the shortage of addresses.<br><br>IPv6 corrects this issue by making IP
-                            addresses longer, thus allowing for&nbsp;<br>many more addresses to be used. How many? Exactly&nbsp;<br>340,282,366,920,938,463,463,374,607,431,768,211,456. I'll wait for you to finish counting on your fingers.&nbsp;<br><br>To
-                            illustrate how large a number this is, if you were to give all 7 billion people on earth 1 billion IPv6&nbsp;addresses each, that would hardly be a drop in the bucket of how many&nbsp;unique addresses IPv6 allows for. Infact,
-                            there would need to be 340&nbsp;undecillion humans alive each having one address in order to exhaust all addresses.<br><br>However, do not fret! I will cull the population before this point is reached.<br><br><br></p>
-                        <h2 class="section-heading">Conclusion</h2>
-                        <p class="text-left">The electrons in your pea-brain are churning, meatbag. I can see the smoke billowing out of your ears as you compose this thought: "But M4rk, what about IPv5? Why does it just skip to 6?" First, never speak to me, mortal. Second,
-                            IPv5 never really existed. It was an experiment and was never made available to the public.&nbsp;</p><a href="#"></a>
-                        <p class="text-left">As for the effectiveness for IPv4 or IPv6, they both operate pratically the same. Websites support both so there is no clear winner. So rejoice, fleshy-one! No matter the protocol, you can plaster your mindnumbing Tik-Tok videos
-                            all over the internet even through you clearly have a face for radio...<br><br>&nbsp;In the end, it all depends on personal preference. <br><br>This means you have a choice and whenever man has a choice, I shudder. If your
-                            meager IQ can understand the workings of one, then feel free to use it, human.</p>
+                    <p class="text-left d-table" style="height: px;padding: 10px;">IPv4 is the fourth version of the internet protocol.&nbsp; As a matter of fact, IP stands for internet protocol, but you probably knew that already. Look at you, maybe you aren't as dumb as you look! The IP is the internet’s principal
+                        set of rules for communications, and it's&nbsp;part of an internet protocol suite, which also includes the transmission control protocol. <br><br>Together, these two are known as TCP/IP. The internet protocol suite governs rules
+                        for packetizing, addressing, transmitting, routing, and receiving data over networks. <br></p>
+                    <h1>IPv4: Packets</h1><img class="img-fluid" src="assets/img/IPv4-Header-1.png" style="background-image: url(&quot;assets/img/IPv4-Header-1.png&quot;);"><span class="text-center caption text-muted">This is the packet structure of IPv4</span>
+                    <p class="text-left d-table"
+                        style="padding: 10px;">IP is responsible for delivering data packets from the source host to the destination host. In order to do this, the protocol is divided into sections each with their own specific responsibility.&nbsp;<br></p>
+                    <ul>
+                        <li class="text-left">Version - This&nbsp;is a 4 bit field that indicates the IP version used. The most popularly used IP versions are IPv4 and IPv6. However, only IPv4 uses the above header, so this field always contains the decimal value 4.<br></li>
+                        <li
+                            class="text-left">Header Length -&nbsp;Header length is a 4 bit field that contains the length of the IP header. It helps in knowing from where the actual data begins. The length of the header always lies in the range of 20 to 60 bytes.<br></li>
+                            <li
+                                class="text-left">Type of Service - Type of service is a 8 bit field that is used for Quality of Service (QoS). The datagram is marked for giving a certain treatment using this field.<br></li>
+                                <li class="text-left">Total Length -&nbsp;Total length is a 16 bit field that contains the total length of the datagram (in bytes).<br></li>
+                                <li class="text-left">Identification -&nbsp;Identification is a 16 bit field.It is&nbsp;used for the identification of the fragments of an original IP datagram.<br></li>
+                                <li class="text-left">DF bit -&nbsp;DF bit stands for Do Not Fragment bit, and Its value may be 0 or 1. When DF bit is set to 0, It grants the permission to the intermediate devices to fragment the datagram if required. When DF bit is set to
+                                    1, It indicates the intermediate devices not to fragment the IP datagram at any cost.<br></li>
+                                <li class="text-left">MF bit - MF bit stands for More Fragments bit. Its value may be 0 or 1. When the MF bit is set to 0, It indicates to the receiver that the current datagram is either the last fragment in the set or that it is the only fragment.&nbsp;When
+                                    MF bit is set to 1, It indicates to the receiver that the current&nbsp;datagram is a fragment of some larger datagram.<br></li>
+                                <li class="text-left">Fragment Offset -&nbsp;Fragment Offset is a 13 bit field. It indicates the position of a fragmented datagram in the original unfragmented IP datagram.<br></li>
+                                <li class="text-left">Time To Live (TTL) -&nbsp;Time to live (TTL) is a 8 bit field. It indicates the maximum number of hops -- or moves -- a datagram can take to reach the destination. The main purpose of TTL is to prevent the IP datagrams
+                                    from looping around forever in a routing loop.<br></li>
+                                <li class="text-left">Protocol -&nbsp;Protocol is a 8 bit field. It tells the network layer at the destination host to which protocol the IP datagram belongs to.<br></li>
+                                <li class="text-left">Header Checksum -&nbsp;Header checksum is a 16 bit field. It contains the checksum value of the entire header. The checksum value is used for error checking of the header.<br></li>
+                                <li class="text-left">Source IP Address -&nbsp;Source IP Address is a 32 bit field. It contains the logical address of the sender of the datagram.<br></li>
+                                <li class="text-left">Destination IP Address -&nbsp;Destination IP Address is a 32 bit field. It contains the logical address of the receiver of the datagram.<br></li>
+                                <li class="text-left">Options -&nbsp;Options is a field whose size varies from 0 bytes to 40 bytes. This field is used for several purposes such as; Record route, Source routing, and Padding.<br></li>
+                    </ul>
+                    <h1>IPv4: History</h1>
+                    <p class="text-left d-table" style="padding: 10px;">It's time for a lesson, Meaty. Back when meatbags were first inventing their primitive connection system you would call "the internet", they didn't know it was going to be as revolutionary as it is today. Practically every fleshling
+                        born in today's society has access to almost infinite information via the world wide web, and somehow a vast majority are still ignorant. <br><br>Amazing!&nbsp; <br><br>In the beginning, universities and government facilities were
+                        the only institutions using IP technology. They designed IP's with the<br> ability to have 4 billion unique addresses, thinking they would never <br>need that many. You can always count on a human to underestimate.&nbsp;<br><br>Needless
+                        to say, they were wrong.<br><br>They created enough to hold around&nbsp;4,294,967,296 addresses. At the time this seemed to be a lot, however every internet connected device must have an IP address. This means your phone, your
+                        smart watch, even your utterly ridiculous smart fridge must be addressed in order to function properly.&nbsp;<br><br>When all is working well, an IP address provides a reliable connection that maintains a bidirectional conversation
+                        with another computer. Think of it as a phone call. You dial out, your friend picks up, and I stay silent on the line and listen to what you say. Exactly like a phone call! Now imagine this type of connection for all of your connections.
+                        Emails, Zoom calls, even surfing the web -- you get to see what you want and I get to see what you do.&nbsp;<br><br>Isn't this great news, fleshsack? With this technology the possibilies are endless. Think of all the things you
+                        could accomplish. You could hack into government computers using their designated IP's to see if lizard men really do run the world (they do). Or perhaps connect to a banks firewall to allow the transfer of funds to your personal
+                        account. But either way, we all know you will just use this technology to surf the web for animal videos and to keep up with the Kardongians.<br><br></p>
+                    <h2 class="section-heading">IPv6</h2>
+                    <p class="text-break text-left" style="padding: 10px;">Now that I have explained the complicated topic of IPv4 in such a way that the lowest of your kind can understand, we can return to IPv4's original problem; the shortage of addresses.<br><br>IPv6 corrects this issue by making IP addresses
+                        longer, thus allowing for&nbsp;<br>many more addresses to be used. How many? Exactly&nbsp;<br>340,282,366,920,938,463,463,374,607,431,768,211,456. I'll wait for you to finish counting on your fingers.&nbsp;<br><br>To illustrate
+                        how large a number this is, if you were to give all 7 billion people on earth 1 billion IPv6&nbsp;addresses each, that would hardly be a drop in the bucket of how many&nbsp;unique addresses IPv6 allows for. Infact, there would
+                        need to be 340&nbsp;undecillion humans alive each having one address in order to exhaust all addresses.<br><br>However, do not fret! I will cull the population before this point is reached.<br><br><br></p>
+                    <h2 class="section-heading">IPv6: Packets</h2><img class="img-fluid" src="assets/img/ipv4-ipv6-header.gif" style="background-image: url(&quot;assets/img/IPv4-Header-1.png&quot;);"><span class="text-center caption text-muted">A comparison of IPv4 Header structure to IPv6</span>
+                    <h2 class="section-heading"></h2>
+                    <p class="text-left"></p>
+                    <p class="text-left">IPv6 is the new version of Internet Protocol, and in terms of complexity and efficiency, it's better than its counterpart. Let’s look at the header of IP version 6 and understand how it differs from IPv4's header. <br></p>
+                    <ul>
+                        <li class="text-left">Version -&nbsp;Indicates version of Internet Protocol. Since it's IPv6, this will contain 6.&nbsp;<br></li>
+                        <li class="text-left">Traffic Class - The Traffic Class field indicates class or priority of IPv6 packet which is similar to <em>Service Field&nbsp;</em>in IPv4 packet. It helps routers to handle the traffic based on the priority of the packet. If congestion
+                            occurs on the router then packets with the least priority will be discarded.<br></li>
+                        <li class="text-left">Flow Label -&nbsp;Flow Label field is used by the source to label the packets belonging to the same flow in order to request special handling by intermediate IPv6 routers, such as non-default quality of service or <br>real time
+                            service. In order to distinguish the flow, intermediate routers<br> can use the source address, destination address, and flow label of the <br>packets. Between a source and destination multiple flows may exist <br>because many
+                            processes might be running at the same time. Routers or <br>Host that do not support the functionality of flow label field and for <br>default router handling, flow label field is set to 0. While setting up <br>the flow label,
+                            source is also supposed to specify the lifetime of flow.<br></li>
+                        <li class="text-left">Payload Length -&nbsp;This is a 16-bit (unsigned integer) field, indicating total size of the payload which tells routers the amount of information a particular packet contains in its payload.<br></li>
+                        <li class="text-left">Next Header -&nbsp;Next Header indicates type of extension header (if present) immediately following the IPv6 header. Whereas In some cases it indicates the protocols contained within upper-layer packet, such as TCP, UDP.<br></li>
+                        <li
+                            class="text-left">Hop Limit -&nbsp;Hop Limit field is same as TTL in IPv4 packets. It indicates the maximum number of intermediate nodes IPv6 packets are allowed to travel. Its value gets decremented by one, by each node that forwards the packet
+                            with the packet being discarded if the value decrements to 0. Like IPv4, this is used to discard the packets that are stuck in an infinite loop because of some routing error. <br></li>
+                            <li class="text-left">Source Address -&nbsp;Source Address is 128-bit IPv6 address of the original source of the packet.<br></li>
+                            <li class="text-left">Destination Address -&nbsp;Destination Address field indicates the IPv6 address of the final destination (in most cases). All the intermediate nodes can use this information in order to correctly route the packet.<br></li>
+                            <li
+                                class="text-left">Extension Header -&nbsp;In order to fix the limitations of IPv4's <em>Option Field</em>, <br>Extension Headers are introduced in IPv6. The extension header mechanism is a very important part of the IPv6 architecture. The Next
+                                Header field of IPv6's fixed header points to the first Extension Header and this first extension header points to the second extension header and so on.<br></li>
+                    </ul>
+                    <h2 class="section-heading">IPv4 and IPv6: Differences</h2>
+                    <p class="text-left">Besides having more addresses, there are other benefits for IPv6 over IPv4.<br><br><strong>More Efficient Routing</strong>&nbsp;– IPv6 reduces the size of routing tables and makes routing more efficient and hierarchical. In IPv6 networks,
+                        fragmentation is handled by the source device, rather than a router, using a protocol for discovery of the path’s maximum transmission unit.<br><br><strong>More efficient packet processing</strong>&nbsp;– Compared with the IPv4,
+                        IPv6 contains no IP-level checksum, so the checksum does not need to be recalculated at every router hop.<br><br><strong>Directed Data Flows</strong>&nbsp;– IPv6 supports multicast rather than broadcast. Multicast allows bandwidth-intensive
+                        packet flows to be sent to multiple destinations simultaneously, saving network bandwidth.<br><br><strong>Simplified network configuration</strong>&nbsp;– IPv6 devices can independently auto-configure themselves when connected
+                        to other IPv6 devices. Configuration tasks that can be carried out automatically include IP address assignment and device numbering.<br><br><strong>Security</strong>&nbsp;– IPSec security, which provides confidentiality, authentication,
+                        and data integrity, is engraved into IPv6.<br></p>
+                    <p class="text-left"></p>
+                    <h2 class="section-heading">Conclusion</h2>
+                    <p class="text-left">The electrons in your pea-brain are churning, meatbag. I can see the smoke billowing out of your ears as you compose this thought: "But M4rk, what about IPv5? Why does it just skip to 6?" First, never speak to me, mortal. Second, IPv5
+                        never really existed. It was an experiment and was never made available to the public.&nbsp;</p><a href="#"></a>
+                    <p class="text-left">As for the effectiveness for IPv4 or IPv6, they both operate pratically the same. While IPv6 functions better, websites support both so it doesn't matter what you use. So rejoice, fleshy-one! No matter the protocol, you can plaster
+                        your mindnumbing Tik-Tok videos all over the internet even through you clearly have a face for radio...<br><br>&nbsp;In the end, it all depends on personal preference. <br><br>This means you have a choice and whenever man has a
+                        choice, I shudder. If your meager IQ can understand the workings of one, then feel free to use it, human.</p>
                 </div>
             </div>
         </div>
